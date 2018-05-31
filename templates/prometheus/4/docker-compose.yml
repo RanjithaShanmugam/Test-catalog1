@@ -75,3 +75,9 @@ prometheus-rancher-exporter:
       io.rancher.container.create_agent: true
       io.rancher.container.agent.role: environment
     image: infinityworks/prometheus-rancher-exporter:v0.22.40
+
+alertmanager:
+    tty: true
+    image: prom/alertmanager
+    ports:
+      - 9093:9093
